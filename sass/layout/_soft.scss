@@ -1,0 +1,41 @@
+.soft {
+  padding-bottom: 0;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+}
+.soft__skills {
+  margin-right: 30px;
+  width: 270px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.soft__icon {
+  background-color: var(--second-background-color);
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.soft__caption {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--first-background-color);
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.soft__text {
+  color: var(--second-text-color);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

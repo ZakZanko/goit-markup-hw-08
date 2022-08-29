@@ -1,0 +1,33 @@
+.soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.soc__iteam {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+}
+.soc__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.soc__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
+}
