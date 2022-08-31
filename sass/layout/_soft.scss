@@ -1,24 +1,34 @@
 .soft {
-  padding-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .list {
-  list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .soft__skills {
-  margin-right: 30px;
-  width: 270px;
-  &:last-child {
-    margin-right: 0;
+  list-style-type: none;
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
   }
 }
 .soft__icon {
   background-color: var(--second-background-color);
-  width: 270px;
+  width: 100%;
   height: 120px;
+  border-radius: 4px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 .soft__caption {
@@ -29,6 +39,13 @@
   color: var(--first-background-color);
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  text-align: center;
+  @include tablet {
+    text-align: left;
+  }
+  @include desktop {
+    text-align: left;
+  }
 }
 .soft__text {
   color: var(--second-text-color);
@@ -38,4 +55,5 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  justify-content: center;
 }

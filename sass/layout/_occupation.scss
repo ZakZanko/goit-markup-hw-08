@@ -1,4 +1,8 @@
 .occupation {
+  display: none;
+  @include desktop{
+    display: block;
+  }  
 }
 .occupation__caption {
   font-weight: 700;
