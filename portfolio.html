@@ -18,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -110,27 +110,19 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts container__header">
+        <ul class="contacts">
           <li class="header__mail">
             <a href="mailto:info@devstudio.com" class="mailto">
-              <svg class="mail__icon">
-                <use
-                  href="./img/icon.svg#icon-envelope"
-                  width="16"
-                  height="12"
-                ></use>
+              <svg class="mail__icon" width="16" height="12">
+                <use href="./img/icon.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="header__tellephone">
             <a href="tel:+380961111111" class="tel">
-              <svg class="tellephone__icon">
-                <use
-                  href="./img/icon.svg#icon-smartphone"
-                  width="10"
-                  height="16"
-                ></use>
+              <svg class="tellephone__icon" width="12" height="16">
+                <use href="./img/icon.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
@@ -158,169 +150,404 @@
               <button type="button" class="portfolio__btn">Маркетинг</button>
             </li>
           </ul>
-          <ul class="portfolio__list ">
+          <ul class="portfolio__list">
             <li class="portfolio__item">
               <a href="./portfolio.html" class="portfolio__link--item">
                 <div class="portfolio__link--hover">
-                <img
-                  src="./img/studio/studio1.jpg"
-                  width="370"
-                  height="294"
-                  alt="Наши проекты"
-                />
-                <p class="project-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
-              </p></div>
-                <div class="portfolio__head--text">
-                <h3 class="portfolio__head">Технокряк</h3>
-                <p class="portfolio__text">Веб-сайт</p>
-              </div>
-            </a>
-            </li>
-            <li class="portfolio__item">
-              <a href="./portfolio.html" class="portfolio__link--item">
-                <div class="portfolio__link--hover">
-                <img
-                  src="./img/studio/studio2.jpg"
-                  width="370"
-                  height="294"
-                  alt="Наши проекты"
-                />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio/studio-project1.jpg    1x,
+                        ./img/studio/studio-project1-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project1-tab.jpg    1x,
+                        ./img/studio/studio-project1-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project1-mob.jpg    1x,
+                        ./img/studio/studio-project1-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/studio/studio-project1.jpg"
+                      width="370"
+                      height="294"
+                      alt="Проэкты и компании"
+                    />
+                  </picture>
                   <p class="project-text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
-                </p></div>
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
                 <div class="portfolio__head--text">
-                <h3 class="portfolio__head">Постер New Orlean vs Golden Star</h3>
-                <p class="portfolio__text">Дизайн</p>
-              </div></a>
+                  <h3 class="portfolio__head">Технокряк</h3>
+                  <p class="portfolio__text">Веб-сайт</p>
+                </div>
+              </a>
             </li>
             <li class="portfolio__item">
               <a href="./portfolio.html" class="portfolio__link--item">
                 <div class="portfolio__link--hover">
-                <img
-                  src="./img/studio/studio3.jpg"
-                  width="370"
-                  height="294"
-                  alt="Наши проекты"
-                /><p class="project-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
-              </p></div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio/studio-project2.jpg    1x,
+                        ./img/studio/studio-project2-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project2-tab.jpg    1x,
+                        ./img/studio/studio-project2-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project2-mob.jpg    1x,
+                        ./img/studio/studio-project2-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/studio/studio-project2.jpg"
+                      width="370"
+                      height="294"
+                      alt="Проэкты и компании"
+                    />
+                  </picture>
+                  <p class="project-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
                 <div class="portfolio__head--text">
-                <h3 class="portfolio__head">Ресторан Seafood</h3>
-                <p class="portfolio__text">Приложение</p>
-              </div>
-            </a>
+                  <h3 class="portfolio__head">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="portfolio__text">Дизайн</p>
+                </div></a
+              >
             </li>
             <li class="portfolio__item">
               <a href="./portfolio.html" class="portfolio__link--item">
                 <div class="portfolio__link--hover">
-                <img
-                  src="./img/studio/studio4.jpg"
-                  width="370"
-                  height="294"
-                  alt="Наши проекты"
-                /><p class="project-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
-              </p></div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio/studio-project3.jpg    1x,
+                        ./img/studio/studio-project3-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project3-tab.jpg    1x,
+                        ./img/studio/studio-project3-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project3-mob.jpg    1x,
+                        ./img/studio/studio-project3-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/studio/studio-project3.jpg"
+                      width="370"
+                      height="294"
+                      alt="Проэкты и компании"
+                    />
+                  </picture>
+                  <p class="project-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
                 <div class="portfolio__head--text">
-                <h3 class="portfolio__head">Проект Prime</h3>
-                <p class="portfolio__text">Маркетинг</p>
-              </div>
-            </a>
+                  <h3 class="portfolio__head">Ресторан Seafood</h3>
+                  <p class="portfolio__text">Приложение</p>
+                </div>
+              </a>
             </li>
             <li class="portfolio__item">
               <a href="./portfolio.html" class="portfolio__link--item">
                 <div class="portfolio__link--hover">
-                <img
-                  src="./img/studio/studio5.jpg"
-                  width="370"
-                  height="294"
-                  alt="Наши проекты"
-                /><p class="project-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
-              </p></div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio/studio-project4.jpg    1x,
+                        ./img/studio/studio-project4-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project4-tab.jpg    1x,
+                        ./img/studio/studio-project4-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project4-mob.jpg    1x,
+                        ./img/studio/studio-project4-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/studio/studio-project4.jpg"
+                      width="370"
+                      height="294"
+                      alt="Проэкты и компании"
+                    />
+                  </picture>
+                  <p class="project-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
                 <div class="portfolio__head--text">
-                <h3 class="portfolio__head">Проект Boxes</h3>
-                <p class="portfolio__text">Приложение</p>
-              </div>
-            </a>
+                  <h3 class="portfolio__head">Проект Prime</h3>
+                  <p class="portfolio__text">Маркетинг</p>
+                </div>
+              </a>
             </li>
             <li class="portfolio__item">
               <a href="./portfolio.html" class="portfolio__link--item">
                 <div class="portfolio__link--hover">
-                <img
-                  src="./img/studio/studio6.jpg"
-                  width="370"
-                  height="294"
-                  alt="Наши проекты"
-                /><p class="project-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
-              </p></div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio/studio-project5.jpg    1x,
+                        ./img/studio/studio-project5-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project5-tab.jpg    1x,
+                        ./img/studio/studio-project5-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project5-mob.jpg    1x,
+                        ./img/studio/studio-project5-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/studio/studio-project5.jpg"
+                      width="370"
+                      height="294"
+                      alt="Проэкты и компании"
+                    />
+                  </picture>
+                  <p class="project-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
                 <div class="portfolio__head--text">
-                <h3 class="portfolio__head">Inspiration has no Borders</h3>
-                <p class="portfolio__text">Веб-сайт</p>
-              </div>
-            </a>
+                  <h3 class="portfolio__head">Проект Boxes</h3>
+                  <p class="portfolio__text">Приложение</p>
+                </div>
+              </a>
             </li>
             <li class="portfolio__item">
               <a href="./portfolio.html" class="portfolio__link--item">
                 <div class="portfolio__link--hover">
-                <img
-                  src="./img/studio/studio7.jpg"
-                  width="370"
-                  height="294"
-                  alt="Наши проекты"
-                /><p class="project-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
-              </p></div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio/studio-project6.jpg    1x,
+                        ./img/studio/studio-project6-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project6-tab.jpg    1x,
+                        ./img/studio/studio-project6-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project6-mob.jpg    1x,
+                        ./img/studio/studio-project6-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/studio/studio-project6.jpg"
+                      width="370"
+                      height="294"
+                      alt="Проэкты и компании"
+                    />
+                  </picture>
+                  <p class="project-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
                 <div class="portfolio__head--text">
-                <h3 class="portfolio__head">Издание Limited Edition</h3>
-                <p class="portfolio__text">Дизайн</p>
-              </div>
-            </a>
+                  <h3 class="portfolio__head">Inspiration has no Borders</h3>
+                  <p class="portfolio__text">Веб-сайт</p>
+                </div>
+              </a>
             </li>
             <li class="portfolio__item">
               <a href="./portfolio.html" class="portfolio__link--item">
                 <div class="portfolio__link--hover">
-                <img
-                  src="./img/studio/studio8.jpg"
-                  width="370"
-                  height="294"
-                  alt="Наши проекты"
-                /><p class="project-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
-              </p></div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio/studio-project7.jpg    1x,
+                        ./img/studio/studio-project7-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project7-tab.jpg    1x,
+                        ./img/studio/studio-project7-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project7-mob.jpg    1x,
+                        ./img/studio/studio-project7-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/studio/studio-project7.jpg"
+                      width="370"
+                      height="294"
+                      alt="Проэкты и компании"
+                    />
+                  </picture>
+                  <p class="project-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
                 <div class="portfolio__head--text">
-                <h3 class="portfolio__head">Проект LAB</h3>
-                <p class="portfolio__text">Маркетинг</p>
-              </div>
-            </a>
+                  <h3 class="portfolio__head">Издание Limited Edition</h3>
+                  <p class="portfolio__text">Дизайн</p>
+                </div>
+              </a>
             </li>
             <li class="portfolio__item">
               <a href="./portfolio.html" class="portfolio__link--item">
                 <div class="portfolio__link--hover">
-                <img
-                  src="./img/studio/studio9.jpg"
-                  width="370"
-                  height="294"
-                  alt="Наши проекты"
-                /><p class="project-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
-              </p></div>
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio/studio-project8.jpg    1x,
+                        ./img/studio/studio-project8-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project8-tab.jpg    1x,
+                        ./img/studio/studio-project8-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project8-mob.jpg    1x,
+                        ./img/studio/studio-project8-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/studio/studio-project8.jpg"
+                      width="370"
+                      height="294"
+                      alt="Проэкты и компании"
+                    />
+                  </picture>
+                  <p class="project-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
                 <div class="portfolio__head--text">
-                <h3 class="portfolio__head">Growing Business</h3>
-                <p class="portfolio__text">Приложение</p>
-              </div>
-            </a>
+                  <h3 class="portfolio__head">Проект LAB</h3>
+                  <p class="portfolio__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="./portfolio.html" class="portfolio__link--item">
+                <div class="portfolio__link--hover">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/studio/studio-project9.jpg    1x,
+                        ./img/studio/studio-project9-2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project9-tab.jpg    1x,
+                        ./img/studio/studio-project9-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/studio/studio-project9-mob.jpg    1x,
+                        ./img/studio/studio-project9-mob-2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/studio/studio-project9.jpg"
+                      width="370"
+                      height="294"
+                      alt="Проэкты и компании"
+                    />
+                  </picture>
+                  <p class="project-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio__head--text">
+                  <h3 class="portfolio__head">Growing Business</h3>
+                  <p class="portfolio__text">Приложение</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -398,7 +625,11 @@
             />
           </label>
           <button type="button" class="footer__btn">
-            Подписаться<svg class="footer__icon--form" width="24px" height="24px">
+            Подписаться<svg
+              class="footer__icon--form"
+              width="24px"
+              height="24px"
+            >
               <use href="./img/icon.svg#icon-send"></use>
             </svg>
           </button>
