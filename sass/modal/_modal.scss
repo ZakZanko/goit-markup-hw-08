@@ -36,6 +36,9 @@
   top: 8px;
   right: 10px;
   background-color: transparent;
+  @media  screen and (max-width:320px) {
+    top: 30px;
+  }
 }
 .modal-close {
   cursor: pointer;
@@ -146,7 +149,6 @@
 }
 .modal-check-icon {
   position: absolute;
-  left: 12px;
   visibility: hidden;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -53,8 +53,7 @@
 /* IMG Portfolio */
 .portfolio__list {
   list-style-type: none;
-  column-gap: 8px;
-  row-gap: 15px;
+  gap: 30px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -109,6 +108,10 @@
   .portfolio__link--item:hover &,
   .portfolio__link--item:focus & {
     transform: translateY(0);
+  }
+  @media  screen and (max-width:320px) {
+    padding-top: 20px ;
+    font-size: 15px;
   }
 }
 .portfolio__head {

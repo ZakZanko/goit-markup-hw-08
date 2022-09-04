@@ -3,11 +3,12 @@
   padding-bottom: 118px;
   width: 100%;
   background: var(--background-hero-footer-color);
+  background-position: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../img/hero-bg-mobile.jpg);
+    url(../img/hero-bg-mobile.jpg); 
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
@@ -24,13 +25,13 @@
           rgba(47, 48, 58, 0.4)
         ),
         url(../img/hero-bg-tablet.jpg);
-      @include retina {
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url(../img/hero-bg-tablet-2x.jpg);
-      }
+        @include retina {
+          background-image: linear-gradient(
+              rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)
+            ),
+            url(../img/hero-bg-tablet-2x.jpg);
+        }
     }
     @include desktop {
       max-width: 1600px;
@@ -52,27 +53,7 @@
   margin: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  @include mobile {
-    max-width: 100%;
-  }
-  @include tablet {
-    max-width: 100%;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../img/hero-bg-tablet.jpg);
-  }
-  @include desktop {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../img/hero-bg-desktop.jpg);
-  }
+  
 }
 .caption {
   text-transform: uppercase;

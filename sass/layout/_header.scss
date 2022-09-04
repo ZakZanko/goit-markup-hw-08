@@ -145,6 +145,9 @@
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
+  @media  screen and (max-width:320px) {
+    font-size: 32px;
+  }
 }
 
 .menu__contact--list--mail {
@@ -169,6 +172,10 @@
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
+  @media  screen and (max-width:320px) {
+    font-size: 13px;
+  
+}
 }
 .menu__social--item {
   padding-right: 10px;
@@ -176,6 +183,7 @@
   &:last-child {
     border: none;
   }
+  
 }
 .menu__link--color {
   color: var(--first-text-color);
